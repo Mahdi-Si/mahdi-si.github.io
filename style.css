@@ -14,7 +14,9 @@ header {
     background-color: #fff; /* White header background */
     padding: 1rem 2rem;
     border-bottom: 1px solid #e9ecef; /* Subtle border */
-    text-align: center;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Vertically align items */
 }
 
 main {
@@ -25,8 +27,14 @@ main {
 }
 
 h1 {
-    color: #212529; /* Slightly darker heading */
-    margin-bottom: 0.5rem;
+    /* color: #212529; */ /* Style h1 specifically in the header */
+    /* margin-bottom: 0.5rem; */
+}
+
+header h1 {
+    color: #212529;
+    margin: 0; /* Remove default margins */
+    font-size: 1.5rem; /* Reduce font size */
 }
 
 p {
